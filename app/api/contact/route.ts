@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL ?? "azdinebelwwiti@gmail.com";
 
 export async function POST(req: NextRequest) {
+  // Lazy init — env var only available at request time, not build time
+  const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await req.json();
     const { name, phone, email, projectType, message } = body;
