@@ -31,9 +31,9 @@ const PROJECTS = [
     location: "Toulouse · Colomiers",
     year: "2023",
     beforeImg:
-      "https://images.unsplash.com/photo-1527515545081-5db817172677?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1600&q=80",
     afterImg:
-      "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&w=1600&q=80",
     caption:
       "Douche italienne, carrelage grand format 60×120, meuble vasque suspendu, robinetterie noire mat.",
     stats: [

@@ -100,7 +100,7 @@ export default function Hero() {
   return (
     <section
       id="accueil"
-      className="relative h-screen min-h-[700px] flex flex-col overflow-hidden"
+      className="relative min-h-screen flex flex-col overflow-hidden"
     >
       {/* ── Full-screen rotating background ─────────────────── */}
       <div className="absolute inset-0">
@@ -271,6 +271,22 @@ export default function Hero() {
           </div>
         </div>
       </motion.div>
+
+      {/* Wave transition to white */}
+      <div className="relative z-10 pointer-events-none -mb-1">
+        <svg
+          viewBox="0 0 1440 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          className="w-full block"
+        >
+          <path
+            d="M0 72L1440 72L1440 24C1200 64 960 72 720 72C480 72 240 24 0 24L0 72Z"
+            fill="white"
+          />
+        </svg>
+      </div>
     </section>
   );
 }
